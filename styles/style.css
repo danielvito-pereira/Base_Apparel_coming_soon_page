@@ -1,0 +1,40 @@
+*{
+  
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+.logo >img{
+    width: 100%;
+    height: 100%;
+}
+.hero >img{
+    width: 100%;
+    height: 100%;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 600px) {
+    #man-wapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo {
+        display: block;
+        width: 7em;
+        padding:2em;
+        
+    }
+    .attribution{
+        display: none;
+    }
+}
