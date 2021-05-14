@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 *{
-  
-
+    font-family: 'Josefin Sans', sans-serif;
 }
 html, body {
     margin: 0;
@@ -15,6 +15,52 @@ html, body {
     width: 100%;
     height: 100%;
 }
+
+.text>h1{
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing:9px;
+    text-align: center;
+    color: hsl(0, 6%, 24%);
+    font: optional;
+}
+.text>p{
+    text-align: center;
+    align-items: center;
+    color:  hsl(0, 36%, 70%);
+    padding: 1em;
+}   
+
+
+
+
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+#campo_busca{
+    border: 1px solid hsl(0, 80%, 86%);
+    border-radius: 5em;
+    width: 24em; 
+    height: 3em;
+    color: hsl(0, 80%, 86%);
+    margin: 1em;
+    text-align: center;
+}
+
+.buscar_produto{
+    border-radius: 45%;
+    background-color: hsl(0, 80%, 86%) ;
+    width: 5em;  
+    height: 4em;  
+    border: none;
+   
+}
+.buscar_produto:hover{
+    background-color: hsl(0, 74%, 74%);
+}
 .attribution { 
     font-size: 11px; text-align: center; 
 }
@@ -27,12 +73,30 @@ html, body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
     }
     .logo {
         display: block;
         width: 7em;
         padding:2em;
         
+    }
+    .botao{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #campo_busca{
+        flex: 1;
+       margin: 0; 
+    }
+    .buscar_produto{
+        border-radius: 30em;
+        background-color: hsl(0, 80%, 86%) ;
+        width: 5em;  
+        height: 3em;  
+        border: none;
+        margin: 0;
+        flex: 2;
     }
     .attribution{
         display: none;
