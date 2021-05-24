@@ -100,6 +100,26 @@ html, body {
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
+    #man-wapper {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        height:100%;
+        grid-template: 
+        "a b " 
+        "c b " 
+        "c b ";
+    }
+    .logo{
+        grid-area: a;
+    }
 
+    .hero{
+        grid-area: b;
+    }
+
+    .text{
+        grid-area: c;
+    }
 }
