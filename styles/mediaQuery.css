@@ -1,0 +1,75 @@
+@media (min-width:1024px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   .container{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 500px 590px;
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        box-sizing: border-box;
+        align-items: center;
+        margin: auto;
+       
+    }
+   .logo {
+     
+        grid-column: 1;
+        grid-row: 1/1;
+        padding: 0;
+
+    }
+    .logo img{
+
+    }
+
+    /*Foto */
+    .hero{
+  
+        grid-column: 2 ;
+        grid-row: 1 / 3;
+       
+    }
+    .hero >img{
+        width: 100%;
+        height: 100%;
+    }
+    .text {
+        width: 80%;
+        grid-column: 1;
+        grid-row: 2/2;
+        text-align: left;
+        margin-bottom: auto;
+    }
+
+    .text h1{
+        text-align: left;
+        font-size: 50px;
+    }
+
+    /*Botão*/
+    .botao{
+        width: 25em; 
+    }
+
+
+    /*Campo de busca */
+    #campo_busca{
+        width: 27em;    
+    }
+ 
+
+    .enviar{
+        border-radius: 30em;
+        background-color: hsl(0, 80%, 86%) ;
+        width: 8em;    
+        border: none;
+    }
+    
+
+}
+
