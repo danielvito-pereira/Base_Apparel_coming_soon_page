@@ -1,4 +1,7 @@
 @media (min-width:1024px){
+    *{
+        box-sizing: border-box;
+    }
     html, body {
         margin: 0;
         padding: 0;
@@ -8,30 +11,34 @@
         display: grid;
         width: 100%;
         height: 100vh;
-        grid-template-columns: 500px 590px;
-        grid-gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-        box-sizing: border-box;
-        align-items: center;
-        margin: auto;
-       
+        grid-template-columns: 1.4fr 1fr;
+        grid-auto-rows: 29.5vh 70vh;
+        grid-gap: 5px;
+        grid-template-areas: "l h"
+                            " t h";
     }
    .logo {
-     
-        grid-column: 1;
+       grid-area: l;
+       justify-self: center;
+       width: 50%;
+
+       /*
+        grid-column: 1/2;
         grid-row: 1/1;
-        padding: 0;
+        padding: 0;*/
 
     }
     .logo img{
-
+        width: 30%;
+        
     }
 
     /*Foto */
     .hero{
-  
-        grid-column: 2 ;
-        grid-row: 1 / 3;
+        grid-area: h;
+        /*
+        grid-column: 2/3 ;
+        grid-row: 1 / 3;*/
        
     }
     .hero >img{
@@ -39,16 +46,17 @@
         height: 100%;
     }
     .text {
-        width: 80%;
-        grid-column: 1;
-        grid-row: 2/2;
+        grid-area: t;
+        justify-self: center;
+        width: 60%;
+        height: 90%;
         text-align: left;
-        margin-bottom: auto;
+        margin: 0;
     }
 
     .text h1{
         text-align: left;
-        font-size: 50px;
+        font-size: 4.5rem;
     }
 
     /*Botão*/
