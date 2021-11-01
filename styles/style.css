@@ -15,10 +15,9 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: hsl(0, 100%, 98%);
 }
 #man-wapper {
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
 }
 .container {
@@ -31,28 +30,24 @@ html, body {
 /* Logo tipo */
 .logo {
     display: block;
-    padding:1.5rem;
     text-align: left;
 }
 .logo img{
     width: 30%;
 }
-
-/*Foto */
-.hero {
-    width: 100%;
-    overflow: hidden;
-}
-.hero >img{
-    width: 100%;
-    height: 100%;
-}
-
 /*Texto */
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    padding:1.5rem;
+    text-align: left;   
+}
 .text {
     margin-top: 8%;
     margin-bottom: 5%;
 }
+
 .text>h1{
     text-transform: uppercase;
     font-size: 40px;
@@ -62,6 +57,7 @@ html, body {
     font: optional;
     margin-bottom: 0;
 }
+
 .text>p{
     align-items: center;
     color:  hsl(0, 36%, 70%);
@@ -72,6 +68,47 @@ html, body {
 
 /*Botão*/
 
+
+.zoon-info {
+    display: inline-block;
+    position: relative;
+  }
+  .zoon-info *{
+    width:100%;
+    margin: 0;
+  }
+  /*affeter serve para adicionar elementos depois dos elementos visiveis
+  */
+  .zoon-info:after {
+    content: "+";
+    color: #fff;
+    font-size:30px;
+    text-align: center;
+    font-weight: 600;
+  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.6);
+  
+    display: none;
+  
+    cursor: pointer;
+  }
+  .zoon-info:hover:after{
+    display: block;
+    
+  }
+
+
 .botao{
     display: flex;
     width: 19rem;
@@ -81,6 +118,16 @@ html, body {
     border-radius: 5em;
     color: hsl(0, 80%, 86%);
     margin: auto;
+}
+
+/*Foto */
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+.hero >img{
+    width: 100%;
+    height: 100%;
 }
 
 
