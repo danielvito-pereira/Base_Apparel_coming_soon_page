@@ -1,0 +1,9 @@
+#hero {
+  padding-block: 0;
+  padding-top: calc(4.1rem + var(--nav-height));
+}
+
+#hero img {
+  width: 100%;
+  display: block;
+}

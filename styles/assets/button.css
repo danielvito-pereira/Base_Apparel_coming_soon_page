@@ -1,0 +1,65 @@
+#button {
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+.botao{
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
+  text-align: right;
+  border: 1px solid hsl(0, 80%, 86%);
+  border-radius: 5em;
+  color: hsl(0, 80%, 86%);
+  margin: auto;
+}
+
+
+#campo_busca{
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  width: 20rem; 
+  outline: none;
+  padding: 1rem;
+  border: 1px solid hsl(0, 80%, 86%);
+}
+
+.enviar{
+  display:inline-block;
+  border-radius: 3rem;
+  width: 6rem; 
+  height: 3rem;  
+  text-align:center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color:  hsl(0, 74%, 74%);
+  
+}
+.enviar:hover{
+  transform:scale(1.2);
+  box-shadow: 3px 3px 3px 3px   hsl(0, 80%, 86%);
+}
+.buscar_produto{
+  border-radius: 45%;
+  background-color: hsl(0, 80%, 86%);
+  width: 5em;  
+  height: 4em;  
+  border: none;
+ 
+}
+
+.zoon-info {
+  display: inline-block;
+  position: relative;
+}
+.zoon-info *{
+  width:100%;
+  margin: 0;
+}
+
+
+
+
+
+
+
