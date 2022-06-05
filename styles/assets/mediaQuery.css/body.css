@@ -1,0 +1,21 @@
+@media (min-width:1024px) {
+  .wrapper {
+    width: min(112rem, 100%);
+    display:grid;
+  }
+  .col-a {
+    grid-area: A;
+
+  }
+  .col-b {
+    grid-area: B;
+  }
+  .col-c {
+    grid-area: C;
+  }
+  .col-d {
+    grid-area: D;
+  }
+
+}
+
