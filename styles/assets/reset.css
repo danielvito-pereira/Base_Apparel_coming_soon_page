@@ -5,6 +5,7 @@
   /*
   background: url(/images/bg-pattern-desktop.svg);
   */
+  background-color:  hsl(0, 100%, 98%);
 }
 body {
   font-size: 1.6rem;

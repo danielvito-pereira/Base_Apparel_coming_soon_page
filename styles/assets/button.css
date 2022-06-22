@@ -28,7 +28,7 @@
 .enviar{
   display:inline-block;
   border-radius: 3rem;
-  width: 6rem; 
+  width: 5rem; 
   height: 3rem;  
   text-align:center;
   border: none;
@@ -37,6 +37,7 @@
   background-color:  hsl(0, 74%, 74%);
   
 }
+
 .enviar:hover{
   transform:scale(1.2);
   box-shadow: 3px 3px 3px 3px   hsl(0, 80%, 86%);
