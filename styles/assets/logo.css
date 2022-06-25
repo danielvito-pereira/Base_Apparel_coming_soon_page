@@ -1,5 +1,13 @@
 #navigation {
+  display: flex;
   width: 100vw;
-  text-align: left;
-  padding: 2rem;
+  align-items: left;
+  padding: 1.2rem;
+}
+
+.logo {
+
+}
+#navigation svg{
+
 }
