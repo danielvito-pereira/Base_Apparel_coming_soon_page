@@ -10,7 +10,7 @@ window.onload = function()
 
   if(largura>=1024)
   {
-    img.setAttribute('src', 'images/desktop.jpg');
+    img.setAttribute('src', 'images/hero-desktop.jpg');
   
   } else {
     img.setAttribute('src', 'images/hero-mobile.jpg');
