@@ -11,9 +11,9 @@ window.onload = function()
   if(largura>=1024)
   {
     img.setAttribute('src', 'images/desktop.jpg');
-    console.log(largura);
+  
   } else {
     img.setAttribute('src', 'images/hero-mobile.jpg');
-   console.log(largura);
+   
   }
 } // fim do window.onload
