@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="styles/assets/button.css">
   <link rel="stylesheet" href="styles/assets/mediaQuery.css/body.css">
   <link rel="stylesheet" href="styles/assets/mediaQuery.css/hero.css">
+  <link rel="stylesheet" href="styles/assets/mediaQuery.css/logo.css">
+  <link rel="stylesheet" href="styles/assets/mediaQuery.css/text.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 </head>
@@ -37,28 +39,29 @@
     <section id="hero" class="col-b">
         <img id="image" src="images/hero-mobile.jpg" alt="hero" srcset="mulher branca de camisa laranja olhando pra frente ">
     </section>
-
-    <section id="text"  class="col-c">
+    <div  class="c">
+      <section id="text">
         
-      <h1> 
-        <span style="color:   hsl(0, 80%, 86%); font-weight: 100;"> We're </span>
-        <br>coming <br>soon
-      </h1>
-      <p>
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our launch deals.
-      </p>
-
-    </section>
-
-    <section id="button"  class="col-d">
-      <div  class="botao">
-        <input type="text" onblur="validacaoEmail(botao.email)" name="campo_busca" id="campo_busca"  placeholder="Email Address" maxlength="60" autocomplete="off">
-        <button class="enviar"  type="submit"  onclick="campo()">
-          <img src="images/icon-arrow.svg" alt="seta de envio " >
-        </button> 
-      </div>
-    </section>
+        <h1> 
+          <span style="color:   hsl(0, 80%, 86%); font-weight: 100;"> We're </span>
+          <br>coming <br>soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+  
+      </section>
+  
+      <section id="button"  >
+        <div  class="botao">
+          <input type="text" onblur="validacaoEmail(botao.email)" name="campo_busca" id="campo_busca"  placeholder="Email Address" maxlength="60" autocomplete="off">
+          <button class="enviar"  type="submit"  onclick="campo()">
+            <img src="images/icon-arrow.svg" alt="seta de envio " >
+          </button> 
+        </div>
+      </section>
+    </div>
   </div>
 
   <script src="scripts/script.js"></script>

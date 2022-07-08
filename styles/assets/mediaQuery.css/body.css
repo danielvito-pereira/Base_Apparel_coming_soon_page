@@ -1,20 +1,24 @@
 @media (min-width:1024px) {
-  .wrapper {
-    width: min(112rem, 100%);
+  #man-wapper {
+    width: 100%;
+    height: 100%;
     display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "a a b"
+    "c c b";
+    margin:auto;
   }
-  .col-a {
-    grid-area: A;
+  .col-a {/*logo*/
+    grid-area: a;
 
   }
-  .col-b {
-    grid-area: B;
+  .col-b {/*foto*/
+    grid-area: b;
   }
   .col-c {
-    grid-area: C;
-  }
-  .col-d {
-    grid-area: D;
+    grid-area: c;
   }
 
 }
