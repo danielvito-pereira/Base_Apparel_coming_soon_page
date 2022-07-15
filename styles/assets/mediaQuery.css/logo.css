@@ -2,8 +2,9 @@
 @media (min-width:1024px) {
   #navigation {
     width: 50%;
-    align-items: left;
+    height: 20%;
     padding: 1.2rem;
+    margin-top:1rem;
   }
   
 }

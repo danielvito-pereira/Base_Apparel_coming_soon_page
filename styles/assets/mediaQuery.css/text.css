@@ -1,25 +1,7 @@
 @media (min-width:1024px) {
-  #text {
-    text-align: center;
-    margin-top: 4rem;
-  }
-  
-  #text h1{
-    font-weight: 700;
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-  }
-  #text span {
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  #text  p {
-    font-weight:100;
-    margin-top: 0.1rem;
-    font-size: 1rem;
-    padding: 1rem;
-    color: hsl(0, 36%, 70%);
+  .c {
+    width: 50%;
+    height: 20%;
   }
 
 }
