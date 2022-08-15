@@ -1,0 +1,14 @@
+/*
+.error {
+  float: right;
+
+  background-color:red;
+}
+.error input [type="text"]{
+  float: right;
+  width: 80%;
+  height:100%;
+  border: none;
+  background:transparent;
+
+}

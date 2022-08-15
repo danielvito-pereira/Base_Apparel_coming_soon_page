@@ -1,3 +1,4 @@
+
 // convém estar no onload da janela
 window.onload = function()
 {
@@ -6,6 +7,7 @@ window.onload = function()
   // neste caso a área visível do browser
   var largura = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   var img = document.querySelector("#image");
+
   // depois é brincar com if's e colocar o banner que queiras:
 
   if(largura>=1024)
@@ -17,3 +19,34 @@ window.onload = function()
    
   }
 } // fim do window.onload
+
+
+function validacaoEmail(field) {
+  usuario = field.value.substring(0, field.value.indexOf("@"));
+  dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+  var error = document.getElementById('campo_busca');
+
+  if ((usuario.length >=1)&&
+      (dominio.length >= 3) &&
+      (usuario.search("@")==-1) &&
+      (dominio.search("@")==-1) &&
+      (usuario.search(" ")==-1) &&
+      (dominio.search(" ")==-1) &&
+      (dominio.search(".")!=-1) &&
+      (dominio.indexOf(".") >=1)&&
+    (dominio.lastIndexOf(".") < dominio.length - 1)) {
+      document.getElementById("campo_busca").innerHTML="E-mail válido";
+      alert("E-mail valido");
+    } else {
+      document.getElementById('campo_busca').innerHTML="E-mail inválido";
+      alert("E-mail inválido");
+    }
+}
+
+function showNavOnScroll() {
+  if (scrollY > 0) {
+    navigation.classList.add("scroll");
+  } else {
+    navigation.classList.remove("scroll");
+  }
+}

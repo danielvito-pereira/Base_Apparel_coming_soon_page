@@ -15,13 +15,26 @@
 .botao input {
   margin: none;
 }
+
+.botao svg {
+  margin-top:0.7rem;
+  float:right;
+  margin-right: 0.7rem;
+  visibility: hidden;/*esconde a visibilidade */
+}
+
+.botao svg .ativo{
+
+  visibility: visible;
+}
 #campo_busca{
   border: 1px solid transparent;
   border-radius: 5rem;
-  width: 20rem; 
+  width: 12rem; 
   outline: none;
   padding: 1rem;
   border: none;
+
 }
 
 .enviar{
