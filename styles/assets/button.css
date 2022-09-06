@@ -54,8 +54,8 @@
   background-color:  hsl(0, 74%, 74%);
 }
 .enviar:hover{
-  transform:scale(1.2);
-  box-shadow: 3px 3px 3px 3px   hsl(0, 80%, 86%);
+
+  box-shadow: 1px 2px 2px 2px   hsl(0, 80%, 86%);
 }
 .buscar_produto{
   border-radius: 45%;
@@ -67,6 +67,12 @@
 }
 input::placeholder {
   color:hsl(0, 80%, 86%);
+}
+
+.error::before{
+  content:url(/images/icon-error.svg);
+  background-color: red;
+
 }
 .zoon-info {
   display: inline-block;
@@ -83,3 +89,15 @@ input::placeholder {
 
 
 
+#nameError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#nameError.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}
